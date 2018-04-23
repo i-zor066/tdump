@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tronald Dump</string>
+    <string name="no_data_to_show">No data to show.</string>
+    <string name="placeholder">Lorem Ipsum!</string>
+    <string name="placeholder_quote">Hypocrite! Hillary Clinton claims she needs a "public and a private stance" in discussions with Wall Street banks.</string>
+    <string name="string_price">Price: %1$s</string>
+    <string name="string_weight">Weight: %1$s</string>
+    <string name="refreshing">REFRESHING</string>
+    <string name="see_what_tronald_thinks">See what Tronald thinks about:</string>
+    <string name="comma">, </string>
+    <string name="what_tronald_thinks_about">What Tronald thinks about: %s</string>
+    <string name="source">(SOURCE)</string>
+</resources>

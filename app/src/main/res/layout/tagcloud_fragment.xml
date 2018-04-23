@@ -1,0 +1,42 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tag_cloud_fragment_root">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_text_intro_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <TextView
+        android:id="@+id/text_intro_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_xx_large"
+        android:text="@string/see_what_tronald_thinks"
+        app:layout_constraintTop_toTopOf="@+id/guideline_text_intro_top"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/tagcloud_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text_intro_tv"
+        android:layout_marginTop="@dimen/generic_gap"
+        android:padding="@dimen/generic_gap_medium">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tagcloud_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.constraint.ConstraintLayout>
